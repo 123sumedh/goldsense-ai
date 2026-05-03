@@ -62,45 +62,45 @@ We tested the system across **4 representative scenarios** to demonstrate differ
 
 ### Demo 1: Real Gold Match ✅
 **Input:** Yellow gold ring + gold tap audio  
-**Output:** VERIFY decision, **18K-22K** detected, audio profile **gold-like (76%)**, confidence 55.7%
+**Output:** 
+<img width="1539" height="949" alt="image" src="https://github.com/user-attachments/assets/b7c691de-3fc7-4092-92c5-b9460715ceea" />
+<img width="1423" height="868" alt="image" src="https://github.com/user-attachments/assets/a357bb1e-46e6-437a-b3f1-123f059bc1fa" />
+
+VERIFY decision, **18K-22K** detected, audio profile **gold-like (76%)**, confidence 55.7%
 > *Both modalities agree → confidence boosted from 33% → 55.7%*
 
 
 
 ### Demo 2: Fake Detection ❌
-**Input:** Silver/diamond ring + plated metal tap audio  
-**Output:** REJECT decision, audio profile **alloy-like (100%)**, high risk score
-> *Both modalities correctly identify non-gold*
+**Input:** Silver/diamond ring + plated metal tap audio
+**Output:**
+<img width="1915" height="1027" alt="image" src="https://github.com/user-attachments/assets/3f4b0249-38af-40af-8afe-07fa3abae407" />
+<img width="1538" height="967" alt="image" src="https://github.com/user-attachments/assets/847d0d32-46cf-44b7-9b00-f07f5571f3d6" />
 
-![Fake Detected](docs/screenshots/demo2_fake_detected.png)
+REJECT decision, audio profile **alloy-like (100%)**, high risk score
+> *Both modalities correctly identify non-gold*
 
 ### Demo 3: Cross-Modal Fraud Detection 🔥
 **Input:** Real gold image + FAKE plated audio (fraudulent submission)  
-**Output:** VERIFY with low confidence — system catches the inconsistency
-> *Vision says gold, audio says alloy → flagged for human verification*
+**Output:**
+<img width="1539" height="963" alt="image" src="https://github.com/user-attachments/assets/d7bbfc84-76c4-4e21-813a-c6266de135e8" />
+<img width="1526" height="954" alt="image" src="https://github.com/user-attachments/assets/87fd9223-dcae-4f1b-b2be-0a50cc2324e5" />
 
-![Cross Modal](docs/screenshots/demo3_cross_modal_conflict.png)
+VERIFY with low confidence — system catches the inconsistency
+> *Vision says gold, audio says alloy → flagged for human verification*
 
 ### Demo 4: Noise Robustness 🌊
 **Input:** Gold chain + gold tap audio with realistic room noise  
-**Output:** VERIFY, audio still detects gold-like signal despite background noise
+**Output:**
+<img width="1537" height="1008" alt="image" src="https://github.com/user-attachments/assets/48cc1dc9-2766-44b3-9b0b-2d6ffa00b40c" />
+<img width="1515" height="954" alt="image" src="https://github.com/user-attachments/assets/0f388fe7-e281-41a9-a3f8-00a95a9ae406" />
+
+VERIFY, audio still detects gold-like signal despite background noise
 > *Production-realistic — handles real-world acoustic environments*
 
-![Noise Robust](docs/screenshots/demo4_noise_robust.png)
-<img width="1372" height="893" alt="image" src="https://github.com/user-attachments/assets/fcab304a-0142-4e5f-8e51-d1396002257f" />
-
----
-
 ## 🌐 Try It Live
-
-🔗 **Live Demo:** [https://huggingface.co/spaces/YOUR_USERNAME/goldsense-ai](https://huggingface.co/spaces/YOUR_USERNAME/goldsense-ai)
-
-📺 **Video Walkthrough:** [YouTube link]
-
 📂 **GitHub Repository:** [https://github.com/YOUR_USERNAME/goldsense-ai](https://github.com/YOUR_USERNAME/goldsense-ai)
-
 ---
-
 ## 🏗️ System Architecture
 
 GoldSense AI implements a **5-layer modular pipeline**, each layer independently testable and gracefully degrading when inputs are noisy or missing.
@@ -446,8 +446,6 @@ For questions, feedback, or NBFC pilot inquiries:
 
 - **GitHub Issues:** [Open an issue](https://github.com/YOUR_USERNAME/goldsense-ai/issues)
 - **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn]
-
 ---
 
 *"The goal isn't perfect measurement. The goal is a reliable, transparent, early-stage assessment system that knows exactly when to hand off to a human."*
