@@ -65,7 +65,7 @@ We tested the system across **4 representative scenarios** to demonstrate differ
 **Output:** VERIFY decision, **18K-22K** detected, audio profile **gold-like (76%)**, confidence 55.7%
 > *Both modalities agree → confidence boosted from 33% → 55.7%*
 
-![Gold Match](docs/screenshots/demo1_gold_match.png)
+
 
 ### Demo 2: Fake Detection ❌
 **Input:** Silver/diamond ring + plated metal tap audio  
@@ -87,6 +87,7 @@ We tested the system across **4 representative scenarios** to demonstrate differ
 > *Production-realistic — handles real-world acoustic environments*
 
 ![Noise Robust](docs/screenshots/demo4_noise_robust.png)
+<img width="1372" height="893" alt="image" src="https://github.com/user-attachments/assets/fcab304a-0142-4e5f-8e51-d1396002257f" />
 
 ---
 
